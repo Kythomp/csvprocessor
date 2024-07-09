@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Sorter</title>
+</head>
+<body>
+    <h1>Photo Sorter</h1>
+    <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+        <label for="folder">Select Folder of Photos:</label>
+        <input type="file" id="folder" name="folder" webkitdirectory directory multiple required><br>
+
+        <label for="csv_file">Select CSV File:</label>
+        <input type="file" id="csv_file" name="csv_file" accept=".csv" required><br>
+
+        <label for="team_column">Team Column Name:</label>
+        <input type="text" id="team_column" name="team_column" required><br>
+
+        <label for="photo_column">Photo Column Name:</label>
+        <input type="text" id="photo_column" name="photo_column" required><br>
+
+        <label for="custom_folder">Custom Folder Name:</label>
+        <input type="text" id="custom_folder" name="custom_folder" required><br>
+
+        <label for="destination_folder">Destination Folder:</label>
+        <input type="file" id="destination_folder" name="destination_folder" webkitdirectory directory required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
